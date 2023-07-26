@@ -1,0 +1,42 @@
+# DB AUTO
+
+
+COLONNA | TIPO | ATTRIBUTI
+-- | -- | --
+ID | BIGINT | PRIMARY_KEY UNIQUE AUTO_INCREMENT
+MODELLO | VARCHAR(50) | NOT NULL
+TARGA | VARCHAR(7) | NOT NULL
+ALIMENTAZIONE | VARCHAR(50) | NOT NULL
+CILINDRATA | SMALL | NULL
+ALLESTIMENTO | VARCHAR(50) | NULL
+ANNO DI PRODUZIONE | YEAR | NULL
+ANNO DI IMMATRICOLAZIONE | YEAR | NULL
+KM PERCORSI | MEDIUMINT UNSIGNED | NULL
+COLORE | VARCHAR(20) | NULL
+SEDILI | TINYINT | NULL
+STATO CARROZZERIA | VARCHAR(A-C) | NULL
+COSTO D'ACQUISTO | FLOAT(7,2) | NULL
+PREZZO DI VENDITA | FLOAT(7,2) | NULL
+ELABORAZIONI EFFETTUATE | VARCHAR | NULL
+COSTO ELABORAZIONI | FLOAT(5,2) | NULL
+DISPONIBILE | BOOL | NULL
+PRENOTATA | BOOL | NULL
+DATA DI INGRESSO NEL CONCESSIONARIO | DATE | NULL
+DATA DI VENDITA | DATE | NULL
+ACQUIRENT | VARCHAR(50) | NULL
+VENDITORE | VARCHAR(50) | NULL 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### INDICATORI
+
+VARCHAR(A-C) indica se la carrozzeria è di grado A, quindi senza danni e graffi, B, danni visibili come lievi ammaccature o graffi ma in ottimo stato, grado C danni evidenti, ammaccature e graffi ben visibili.
+tutto da gestire a livello di codice.
+
+BOOL indica un numero 0 o 1 da interpretare in codice con un true o un false. 
